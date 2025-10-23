@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from './Footer'
 import Header from "./Header";
-import restaurant_interior from "../public/images/restaurant_interior.jpg"
+import restaurant_interior from "../public/images/restaurant_interior.jpg";
 
 function About() {
   return (
