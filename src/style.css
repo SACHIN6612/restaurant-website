@@ -1,0 +1,317 @@
+/* =========================
+   Global Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 15px;
+}
+
+section {
+    padding: 50px 70px 50px 100px;
+    text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background: #d35400;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e67e22;
+}
+
+/* =========================
+   Header / Navigation
+========================= */
+header {
+  background: #2c3e50;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e67e22;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  background: url('/images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 125px 20px 125px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   About Section
+========================= */
+.about img {
+  max-width: 500px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* =========================
+   Menu Section
+========================= */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1px));
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.menu .item {
+  width: 330px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu .item:hover {
+  background: #ffe5d4;
+}
+
+.menu span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #d35400;
+}
+
+.item img {
+  width: 250px;
+}
+
+/* =========================
+   Specials Section
+========================= */
+
+.special-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1px));
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.special-item img {
+  width: 250px;
+}
+
+.specials span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #d35400;
+}
+
+.specials .special-item {
+  width: 330px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* =========================
+   Gallery Section
+========================= */
+.gallery .images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   Reservation Section
+========================= */
+.reservation form {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+}
+
+.reservation input,
+.reservation button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reservation button {
+  background: #d35400;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reservation button:hover {
+  background: #e67e22;
+}
+
+/* =========================
+   Testimonials Section
+========================= */
+.testimonials blockquote {
+  font-style: italic;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 600px;
+}
+
+.testimonials cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* =========================
+   Contact Section
+========================= */
+.contact p {
+  margin: 10px 0;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .socials a {
+  color: #e67e22;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .socials a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #2c3e50;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
